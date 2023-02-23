@@ -949,7 +949,7 @@ pre code {
 
 @media (min-width:1200px) {
     .container {
-        width: 1170px
+        width: 1262px
     }
 }
 
@@ -4683,7 +4683,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 .navbar-inverse .navbar-nav>.active>a:hover,
 .navbar-inverse .navbar-nav>li>a:focus,
 .navbar-inverse .navbar-nav>li>a:hover {
-    color: #0f0;
+    color: #ddd9ce;
     background-color: transparent
 }
 
@@ -5683,7 +5683,7 @@ body.minimal {
 }
 
 .hero-full-container {
-    height: 100vh
+    height: 95vh
 }
 
 .hero-full-container h1 {
@@ -5703,8 +5703,30 @@ body.minimal {
     display: table-cell
 }
 
-
-
+@media (max-width: 768px) {
+    .body {
+        height: auto;
+        display: block ;
+    }
+    
+    body.minimal {
+        height: auto;
+        display: block ;
+    }
+    .hero-full-container {
+    height: auto;
+    }
+    
+    .hero-full-container .hero-full-wrapper {
+    display: block;
+    height: auto;
+    }
+    
+    .hero-full-container .hero-full-wrapper .text-content {
+    display: block;
+    text-align: center;
+    }
+}
 
 .green-text-container h1,
 .green-text-container h2,
@@ -5712,12 +5734,11 @@ body.minimal {
 .green-text-container h4,
 .green-text-container h5,
 .green-text-container p {
-    text-shadow: 0 1px 3px #000;
-    color: #0f0
+    text-shadow: 0 10px 30px #fa0000;
 }
 
 .green-text-container a {
-    color: #fff
+    color: #fff 
 }
 
 .section-container-spacer {
